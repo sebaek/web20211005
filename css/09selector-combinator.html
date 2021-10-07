@@ -19,15 +19,26 @@
             font-style: italic;
         }
 
-        { /* p요소 and class error */
+        p.error { /* p요소 and class error */
             font-family: D2Coding;
+        }
+
+        .error.note { /* class error and class note */
+            border-style: solid;
+        }
+
+        #para1 {
+            text-align: right;
+        }
+        p#para1 {
+            border-style: dotted;
         }
     </style>
 </head>
 <body>
     <!-- (h1>lorem3^p>lorem)*3 -->
     <h1 class="note">Lorem, ipsum dolor.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, adipisci? Ducimus facere officia atque eos hic minus veniam nisi fuga dolores sunt at veritatis, voluptas, porro error omnis itaque facilis?</p>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, adipisci? Ducimus facere officia atque eos hic minus veniam nisi fuga dolores sunt at veritatis, voluptas, porro error omnis itaque facilis?</p>
     <h1 class="error note">Maxime, autem. Quod?</h1>
     <p>Libero deleniti odio eius dolor consequuntur harum illo amet accusantium itaque placeat omnis labore blanditiis distinctio, iusto deserunt, cumque corporis laborum. Sint, dolorum. Quisquam laudantium tempora ex quibusdam mollitia in?</p>
     <h1 class="error">Consectetur, repudiandae dolor.</h1>
