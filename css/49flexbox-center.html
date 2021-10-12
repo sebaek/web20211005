@@ -3,7 +3,34 @@
 <head>
     <title>center</title>
     <style>
-        
+        .center {
+            background-color: black;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            width: 150px;
+        }
+        .container {
+            background-color: thistle;
+            margin-top: 15px;
+            height: 300px;
+        }
+
+        #div1 > .center {
+            margin: auto;
+        }
+
+        #div1 {
+            display: flex;
+        }
+
+        #div2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
