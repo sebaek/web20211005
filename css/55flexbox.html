@@ -23,9 +23,43 @@
             background-color: seagreen;
         }
 
+        .top-container {
+            display: flex;
+            height: 42px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 7px;
+        }
+        .button {
+            padding: 3px 10px;
+            color: white;
+            background-color: seagreen;
+            border-radius: 10px;
+        }
+        .top-container > .left-menu > div {
+            margin-right: 10px;
+        }
+        .logo {
+            font-size: 40px;
+            color: red;
+        }
+        .top-container > .left-menu {
+            align-items: center;
+        }
     </style>
 </head>
 <body>
+<!-- .top-container>.left-menu+.right-menu -->
+<div class="top-container">
+    <div class="left-menu">
+        <!-- div{image}+div{Menu} -->
+        <div class="logo"><i class="fab fa-apple"></i></div>
+        <div>Menu <i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="right-menu">
+        <div class="button">Log In</div>
+    </div>
+</div>
 <div class="menu-container">
     <!-- .left-menu>.menu-item*5 -->
     <div class="left-menu">
