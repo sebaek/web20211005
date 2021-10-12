@@ -20,9 +20,30 @@
         .item:nth-child(2n) {
             background-color: blue;
         }
+        #container1 {
+            justify-content: flex-start;
+        }
+        #container2 {
+            justify-content: flex-end;
+        }
+        #container3 {
+            justify-content: center;
+        }
+        #container4 {
+            justify-content: space-between;
+        }
+        #container5 {
+            justify-content: space-around;
+        }
+        #container6 {
+            justify-content: space-evenly;
+        }
     </style>
 </head>
 <body>
+    <p>justify-content 속성은 메인축 기준으로 
+        아이템을 배치하는 방법을 정의함
+    </p>
 <!-- .container*6#container$>.item*5{$} -->
 <div class="container" id="container1">
     <div class="item">1</div>
