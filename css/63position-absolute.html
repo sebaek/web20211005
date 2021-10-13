@@ -8,23 +8,43 @@
             position: relative;
         }
 
+        .icon {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: indianred;
+            line-height: 28px;
+            color: ivory;
+        }
+
         .text {
             position: absolute;
-            top: 0px;
+            top: -5px;
             left: 30px;
             display: none;
         }
-
+        .text > i {
+            font-size: 36px;
+            color: lightblue;
+        }
+        .text > span {
+            background-color: lightblue;
+            position: relative;
+            bottom: 7px;
+            left: -2px;
+        }
         .icon:hover + .text {
             display: block;
         }
+
     </style>
 </head>
 <body>
     <!-- .container>.icon+.text -->
     <div class="container">
-        <div class="icon">...</div>
-        <div class="text">숨겨진 텍스트</div>
+        <div class="icon"><i class="fas fa-hamburger"></i></div>
+        <div class="text"><i class="fas fa-caret-left"></i><span>햄버거</span></div>
     </div>
 </body>
 </html>
