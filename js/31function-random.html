@@ -21,6 +21,15 @@ function showRandom() {
     let r = genRandom(v1, v2);
     console.log(r);
 }
+
+function genRandom(a, b) {
+    // a:3, b:5
+    let len = (b - a) + 1; // 3
+    let ran = parseInt(Math.random() * len); // 0, 1, 2
+    let result = ran + a;
+
+    return result;
+}
 </script>
 </body>
 </html>
