@@ -20,6 +20,11 @@ function showRandom() {
     let r = genRandom(val);
     console.log(r); // 1 ~ val 사이의 임의의 값 출력
 }
+
+function genRandom(param) {
+    return parseInt(Math.random() * param) + 1;
+}
+
 </script>
 </body>
 </html>
