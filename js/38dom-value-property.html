@@ -10,9 +10,7 @@
 <body>
 <!-- input#input1+p*5>lorem1 -->
 <input type="text" id="input1">
-<p onclick="changeVal(0);">
-    Lorem.
-</p>
+<p onclick="changeVal(0);">Lorem.</p>
 <p onclick="changeVal(1);">
     Libero.
 </p>
@@ -28,7 +26,8 @@
 <script>
 function changeVal(idx) {
     let paras = document.querySelectorAll("p");
-    
+    // console.log(paras[idx].innerHTML);
+    document.querySelector("#input1").value = paras[idx].innerHTML.trim();
 }
 </script>
 </body>
