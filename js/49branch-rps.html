@@ -24,8 +24,24 @@
     </div>
 
     <div><h1>경기 결과</h1></div>
+    <div class="result">
+        <div>이김
+            <span id="win">0</span>
+        </div>
+        <div>짐
+            <span id="lose">0</span>
+        </div>
+        <div>비김
+            <span id="tie">0</span>
+        </div>
+    </div>
 
 <script>
+    function increase(selector) {
+        let elem = document.querySelector(selector);
+        let n = Number(elem.innerHTML);
+        elem.innerHTML = n + 1;
+    }
     function rps(user) {
         let r = Math.random();
         // console.log(r);
@@ -36,14 +52,19 @@
         let result;
         if (user == r) {
             result = "비겼습니다";
+            increase("#tie");
         } else if (user == 1 && r == 0) {
             result = "이겼습니다";
+            increase("#win");
         } else if (user == 2 && r == 1) {
             result = "이겼습니다";
+            increase("#win");
         } else if (user == 0 && r == 2) {
             result = "이겼습니다";
+            increase("#win");
         } else {
             result = "졌습니다";
+            increase("#lose");
         }
         
         //h1 요소에 set
