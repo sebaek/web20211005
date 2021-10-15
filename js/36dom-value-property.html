@@ -11,9 +11,15 @@
 <!-- input#input1+button{출력} -->
 <!-- https://git.io/JKnif -->
 <input type="text" id="input1">
-<button>출력</button>
-<script>
+<button onclick="showValue();">출력</button>
 
+<script>
+function showValue() {
+    let in1 = document.getElementById("input1");
+    let val = in1.value;
+
+    console.log(val);
+}
 </script>
 </body>
 </html>
