@@ -15,9 +15,15 @@
 
 <script>
     // console 모든 p요소의 content가 출력
+    let paras = document.querySelectorAll(".note");
+    console.log(paras[0].innerHTML);
+    console.log(paras[1].innerHTML);
+    console.log(paras[2].innerHTML);
 
     // 모든 p요소의 content를 "hello" 변경
-    
+    paras[0].innerHTML = "hello";
+    paras[1].innerHTML = "hello";
+    paras[2].innerHTML = "hello";
 </script>
 </body>
 </html>
