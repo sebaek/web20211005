@@ -4,7 +4,9 @@
     <link rel="stylesheet" href="../icon/css/all.css">
     <title>class</title>
     <style>
-        
+        div {
+            font-size: 48px;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +22,12 @@
     </span>
 </div>
 <script>
-
+function changeHand(hand) {
+    let icon = document.querySelector("i");
+    icon.classList.remove('fa-hand-scissors', 'fa-hand-rock', 'fa-hand-paper');
+    icon.classList.add("fas");
+    icon.classList.add(hand);
+}
 </script>
 </body>
 </html>
