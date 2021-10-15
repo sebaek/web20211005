@@ -13,7 +13,11 @@
     <span onclick="toggleHeart();"><i class="far fa-heart"></i></span>
 
 <script>
-
+function toggleHeart() {
+    let icon = document.querySelector("i");
+    icon.classList.toggle("far");
+    icon.classList.toggle("fas");
+}
 </script>
 </body>
 </html>
