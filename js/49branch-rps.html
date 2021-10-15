@@ -53,13 +53,7 @@
         if (user == r) {
             result = "비겼습니다";
             increase("#tie");
-        } else if (user == 1 && r == 0) {
-            result = "이겼습니다";
-            increase("#win");
-        } else if (user == 2 && r == 1) {
-            result = "이겼습니다";
-            increase("#win");
-        } else if (user == 0 && r == 2) {
+        } else if ((user + 2) % 3 == r) {
             result = "이겼습니다";
             increase("#win");
         } else {
