@@ -10,7 +10,7 @@
 <body>
 <!-- input#input1+button{바꾸기}+h1*5>lorem1 -->
 <input type="text" id="input1">
-<button>바꾸기</button>
+<button onclick="change();">바꾸기</button>
 <h1>
     Lorem.
 </h1>
@@ -27,7 +27,14 @@
     Eos.
 </h1>
 <script>
+function change() {
+    let inputElem = document.querySelector("#input1");
+    let heads = document.querySelectorAll("h1");
 
+    for (let i = 0; i < heads.length; i++) {
+        heads[i].innerHTML = inputElem.value;
+    }
+}
 </script>
 </body>
 </html>
