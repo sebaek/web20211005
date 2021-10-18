@@ -10,11 +10,21 @@
 <body>
 <!-- input#input1+button{추가}+button{출력} -->
 <input type="text" id="input1">
-<button>추가</button>
-<button>출력</button>
+<button onclick="add();">추가</button>
+<button onclick="print();">출력</button>
 <script>
 let arr = [];
 
+function add() {
+    let val = document.querySelector("#input1").value;
+    arr.push(val);
+}
+
+function print() {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
 
 </script>
 </body>
