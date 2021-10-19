@@ -4,12 +4,14 @@
     <link rel="stylesheet" href="../icon/css/all.css">
     <title>dom style</title>
     <style>
-        
+        #elem1 {
+            color: red;
+        }
     </style>
 </head>
 <body>
 <!-- #elem$*5>lorem1 -->
-<div id="elem1">
+<div id="elem1" style="color: yellow;">
     Lorem.
 </div>
 <div id="elem2">
@@ -29,7 +31,7 @@
     Lorem, ipsum.
 </div>
 <script>
-document.querySelector("#elem1").style.color = "blue";
+// document.querySelector("#elem1").style.color = "blue";
 document.querySelector("#elem2").style.backgroundColor = "yellow";
 document.querySelector("#elem3").style.fontSize = "32px";
 document.querySelector("#elem4").style.border = "5px solid green";
