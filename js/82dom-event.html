@@ -23,6 +23,8 @@ document.querySelector("#input1").onkeyup = function () {
     let headElem = document.querySelector("#head1");
 
     headElem.innerHTML = inputElem.value;
+
+    document.querySelector("#count").innerHTML = inputElem.value.length;
 }
 
 
