@@ -51,12 +51,12 @@ for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
 
     balls[i].innerHTML = arr[i];
-
+    
+    // 배경색 랜덤
     let r = parseInt(Math.random() * 256);
     let g = parseInt(Math.random() * 256);
     let b = parseInt(Math.random() * 256);
 
-    // 배경색 랜덤
     balls[i].style.backgroundColor = "#" + r.toString(16) + g.toString(16); + b.toString(16);
 }
 </script>
