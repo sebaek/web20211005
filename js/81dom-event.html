@@ -19,6 +19,10 @@
 let icon = document.querySelector("#icon1");
 icon.onclick = function () {
     console.log("아이콘 클릭됨");
+
+    let elem = document.querySelector("#count");
+    
+    elem.innerHTML = Number(elem.innerHTML) + 1;
 };
 
 
