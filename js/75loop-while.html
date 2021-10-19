@@ -22,7 +22,11 @@ arr.push(parseInt(Math.random() * 45) + 1);
 */
 
 while (arr.length < 6) {
-    arr.push(parseInt(Math.random() * 45) + 1);
+    let number = parseInt(Math.random() * 45) + 1;
+
+    if (!arr.includes(number)) {
+        arr.push(number);
+    }
 }
 
 for (let i = 0; i < arr.length; i++) {
