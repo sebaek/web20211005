@@ -15,6 +15,18 @@
 </h1>
 <script>
 
+let show = true;
+document.querySelector("button").addEventListener("click", function () {
+    let head = document.querySelector("h1");
+    if (show) {
+        head.style.display = "none";
+        show = false;
+    } else {
+        head.style.display = "block";
+        show = true;
+    }
+});
+
 </script>
 </body>
 </html>
