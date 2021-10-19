@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>while</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<script>
+let arr = [];
+
+/*
+arr.push(parseInt(Math.random() * 45) + 1);
+arr.push(parseInt(Math.random() * 45) + 1);
+arr.push(parseInt(Math.random() * 45) + 1);
+arr.push(parseInt(Math.random() * 45) + 1);
+arr.push(parseInt(Math.random() * 45) + 1);
+arr.push(parseInt(Math.random() * 45) + 1);
+*/
+
+while (arr.length < 6) {
+    arr.push(parseInt(Math.random() * 45) + 1);
+}
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+</script>
+</body>
+</html>
