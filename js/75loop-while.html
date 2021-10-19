@@ -4,11 +4,28 @@
     <link rel="stylesheet" href="../icon/css/all.css">
     <title>while</title>
     <style>
-        
+        .ball {
+            width: 50px;
+            height: 50px;
+            font-size: 32px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            border-radius: 50%;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-
+<!-- .ball*6 -->
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
 <script>
 let arr = [];
 
@@ -29,8 +46,11 @@ while (arr.length < 6) {
     }
 }
 
+let balls = document.querySelectorAll(".ball");
 for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
+
+    balls[i].innerHTML = arr[i];
 }
 </script>
 </body>
