@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>object</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- {item}+input#input1+button{+}+ul#list1 -->
+item
+<input type="text" id="input1">
+<button>+</button>
+<ul id="list1">
+    <li>1, lorem</li>
+</ul>
+<script>
+document.querySelector("button").addEventListener("click", function () {
+    // 코드 작성
+
+
+    document.querySelector("#list1").innerHTML += `<li>${data.num}, ${data.item}</li>`;
+})
+</script>
+</body>
+</html>
