@@ -22,7 +22,15 @@ color
     </li>
 </ul>
 <script>
+document.querySelector("button").addEventListener("click", function () {
+    let text = document.querySelector("#input1").value;
+    let colorName = document.querySelector("#input2").value;
 
+    let ulElem = document.querySelector("#list1");
+
+    ulElem.innerHTML += `<li style="color: ${colorName};">${text}</li>`;
+
+})
 </script>
 </body>
 </html>
