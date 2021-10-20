@@ -16,9 +16,17 @@ item
     <li>1, lorem</li>
 </ul>
 <script>
+    
+let number = 1;
 document.querySelector("button").addEventListener("click", function () {
     // 코드 작성
+    let text = document.querySelector("#input1").value;
 
+    number++;
+    let data = {
+        num: number,
+        item: text
+    };
 
     document.querySelector("#list1").innerHTML += `<li>${data.num}, ${data.item}</li>`;
 })
