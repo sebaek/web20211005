@@ -14,6 +14,14 @@
             // keyup 이벤트 발생시 console에 "키업 이벤트 발생" 출력
             // --- on 메소드 활용
 
+            $("#input1").on({
+                select: function () {
+                    console.log("셀렉트 이벤트 발생");
+                },
+                keyup: function () {
+                    console.log("키업 이벤트 발생");
+                }
+            });
         });
     </script>
 </head>
