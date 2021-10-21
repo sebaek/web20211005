@@ -9,7 +9,10 @@
     </style>
     <script>
         $(document).ready(function() {
-            
+            $("input").keyup(function() {
+                let address = $(this).val();
+                $("a").attr("href", address);
+            });
         });
     </script>
 </head>
