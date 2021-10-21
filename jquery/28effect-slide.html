@@ -9,7 +9,18 @@
     </style>
     <script>
         $(document).ready(function() {
-            
+            $("#btn1").click(function () {
+                $("h1").slideUp();
+            });
+
+            $("#btn2").click(function () {
+                $("h1").slideDown();
+            });
+
+            $("#btn3").click(function () {
+                $("h1").slideToggle(1000);
+            });
+
         });
     </script>
 </head>
