@@ -9,7 +9,14 @@
     </style>
     <script>
         $(document).ready(function() {
-            
+            $("#btn1").click(function() {
+                // 1. input value 얻기
+                let val = $("#input1").val();
+                // 2. list item 만들고
+                let li = $("<li />").html(val);
+                // 3. #list1 에 append
+                $("#list1").append(li);
+            });
         });
     </script>
 </head>
