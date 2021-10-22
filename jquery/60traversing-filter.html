@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>filter</title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#input1").keyup(function() {
+                let lists = $("#list1 li");
+
+                for (let i = 0; i < lists.length; i++) {
+                    let text = lists.eq(i).text();
+                    if (text.toLowerCase().includes($(this).val())) {
+                        lists.eq(i).show();
+                    } else {
+                        lists.eq(i).hide();
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- input#input1 -->
+<input type="text" id="input1">
+<!-- ul#list1>li*30>lorem5 -->
+<ul id="list1">
+    <li>
+        Lorem ipsum dolor sit amet.
+    </li>
+    <li>
+        Enim possimus debitis obcaecati placeat.
+    </li>
+    <li>
+        Dolores quidem ut blanditiis sed.
+    </li>
+    <li>
+        Modi ipsa voluptate vitae velit.
+    </li>
+    <li>
+        Voluptas facilis optio eius quae!
+    </li>
+    <li>
+        Rerum numquam ducimus nesciunt delectus.
+    </li>
+    <li>
+        Sit reiciendis inventore distinctio quam!
+    </li>
+    <li>
+        Placeat totam voluptatibus voluptas neque?
+    </li>
+    <li>
+        Facere eligendi nihil non eum!
+    </li>
+    <li>
+        Inventore voluptates unde aspernatur amet.
+    </li>
+    <li>
+        Soluta eos voluptates temporibus rem?
+    </li>
+    <li>
+        Ut similique in obcaecati eveniet.
+    </li>
+    <li>
+        Excepturi ab labore sint aperiam.
+    </li>
+    <li>
+        Hic omnis quibusdam facilis nihil!
+    </li>
+    <li>
+        Officiis repudiandae suscipit esse dicta.
+    </li>
+    <li>
+        Eveniet dolores culpa doloremque officia!
+    </li>
+    <li>
+        Veritatis dolorum eius vel suscipit!
+    </li>
+    <li>
+        Magni nobis id illum minima.
+    </li>
+    <li>
+        Vitae esse sint itaque modi?
+    </li>
+    <li>
+        Nostrum iure aperiam culpa veniam!
+    </li>
+    <li>
+        Placeat architecto repellendus saepe ipsam.
+    </li>
+    <li>
+        Quasi amet architecto rerum assumenda.
+    </li>
+    <li>
+        Amet provident repudiandae sed beatae!
+    </li>
+    <li>
+        Accusantium fuga repellendus eum animi?
+    </li>
+    <li>
+        Assumenda ipsum rem reiciendis dignissimos!
+    </li>
+    <li>
+        Asperiores labore nobis quo delectus.
+    </li>
+    <li>
+        Laborum veritatis eius natus magni.
+    </li>
+    <li>
+        Repellendus enim dolor quas facilis!
+    </li>
+    <li>
+        Modi ex ad tempora voluptatem!
+    </li>
+    <li>
+        Quidem porro ipsam asperiores doloribus!
+    </li>
+</ul>
+<script>
+
+</script>
+</body>
+</html>
