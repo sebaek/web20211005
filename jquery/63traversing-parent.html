@@ -13,6 +13,10 @@
                 let text = $("#input1").val();
                 let trashBtn = $("<button />").append(`<i class="fas fa-trash-alt"></i>`);
                 
+                trashBtn.click(function() {
+                    $(this).parent().remove();
+                });
+
                 let newli = $("<li />").html(text).append(trashBtn);
                 $("#list1").append(newli);
             })
