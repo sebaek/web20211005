@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>class</title>
+    <style>
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .red-border {
+            border: 10px solid red;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("h1:first-child").addClass("blue red-border");
+            $("h1:nth-child(2)").addClass("blue");
+            $("h1:nth-child(3)").addClass("red-border");
+            $("h1:nth-child(3)").addClass("blue");
+        });
+    </script>
+</head>
+<body>
+<!-- h1*5>lorem1 -->
+<h1>
+    Lorem.
+</h1>
+<h1>
+    Cumque.
+</h1>
+<h1>
+    Veniam.
+</h1>
+<h1>
+    Et.
+</h1>
+<h1>
+    Sequi!
+</h1>
+<script>
+
+</script>
+</body>
+</html>
