@@ -9,14 +9,19 @@
     </style>
     <script>
         $(document).ready(function() {
-            $("i").click(function() {
+            $("#heart").click(function() {
                 $(this).toggleClass("fas").toggleClass("far");
-            })
+            });
+
+            $("#bell").click(function() {
+                $(this).toggleClass("fa-bell").toggleClass("fa-bell-slash");
+            });
         });
     </script>
 </head>
 <body>
-<i class="fas fa-heart"></i>
+<i id="heart" class="fas fa-heart"></i>
+<i id="bell" class="fas fa-bell"></i>
 <script>
 
 </script>
