@@ -18,7 +18,12 @@
     </style>
     <script>
         $(document).ready(function() {
-            
+            $(".small").mouseenter(function() {
+                // console.log("스몰이미지에 마우스 들어감");
+                let img = $(this).attr("src");
+                // console.log(img);
+                $(".big").attr("src", img);
+            });
         });
     </script>
 </head>
